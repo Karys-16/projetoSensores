@@ -51,7 +51,7 @@
 
             var rede = navigator.connection.type;
             var tipo = {};
-            tipo[connection.UNKNKOWN] = "Conexão desconhecida ☺";
+            tipo[connection.UNKKOWN] = "Conexão desconhecida ☺";
             tipo[connection.ETHERNET] = "Conexão Cabeada ♥";
             tipo[connection.WIFI] = "Conexão Wi-fi ☻";
             tipo[connection.CELL_2G] = "Conexão 2G";
@@ -105,7 +105,7 @@
                     novaX = atualX + x;
                     novaY = atualY + y;
 
-                    $("#circulo").offset({left:novaX, top: novaY});
+                    $("#circulo").offset({left:novaX, top:novaY});
                 },true);
             }
             else{
