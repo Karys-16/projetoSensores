@@ -51,13 +51,13 @@
 
             var rede = navigator.connection.type;
             var tipo = {};
-            tipo[connection.UNKKOWN] = "Conexão desconhecida ☺";
-            tipo[connection.ETHERNET] = "Conexão Cabeada ♥";
-            tipo[connection.WIFI] = "Conexão Wi-fi ☻";
-            tipo[connection.CELL_2G] = "Conexão 2G";
-            tipo[connection.CELL_3G] = "Conexão 3G";
-            tipo[connection.CELL_4G] = "Conexão 4G";
-            tipo[connection.NONE] = "NENHUMA CONEXÃO :/";
+            tipo[Connection.UNKNOW] = "Conexão desconhecida ☺";
+            tipo[Connection.ETHERNET] = "Conexão Cabeada ♥";
+            tipo[Connection.WIFI] = "Conexão Wi-fi ☻";
+            tipo[Connection.CELL_2G] = "Conexão 2G";
+            tipo[Connection.CELL_3G] = "Conexão 3G";
+            tipo[Connection.CELL_4G] = "Conexão 4G";
+            tipo[Connection.NONE] = "NENHUMA CONEXÃO :/";
 
             $("#exibeRede").html(tipo[rede]);
         }
