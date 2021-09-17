@@ -70,7 +70,7 @@
             $("#exibeAcelerometro").hide();
             $("#circulo").hide();
 
-            navigator.getBattery().then(function (bactery){
+            navigator.getBattery().then(function (battery){
                 $("#exibeBateria").html("O nível de bateria é: " + battery.level * 100 + "%");
                 battery.onlevelchange = function(){
                     $("exibeBateria").html("O nível da bateria é: " + battery.level * 100 + "%");
