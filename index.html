@@ -15,6 +15,7 @@
             $("#exibeRede").hide();
             $("#exibeBateria").hide();
             $("#exibeAcelerometro").hide();
+            $("#circulo").hide();
 
             document.addEventListener('deviceready', iniciar);
         }
@@ -41,6 +42,7 @@
         }
 
         function rede(){
+            navigator.vibrate([300]);
             $("#exibeHardware").hide();
             $("#exibeRede").show();
             $("#exibeBateria").hide();
@@ -52,15 +54,16 @@
             tipo[connection.UNKNKOWN] = "Conexão desconhecida ☺";
             tipo[connection.ETHERNET] = "Conexão Cabeada ♥";
             tipo[connection.WIFI] = "Conexão Wi-fi ☻";
-            tipo[connection.CELL_2G] = "Conexão 2G"
-            tipo[connection.CELL_3G] = "Conexão 3G"
-            tipo[connection.CELL_4G] = "Conexão 4G"
+            tipo[connection.CELL_2G] = "Conexão 2G";
+            tipo[connection.CELL_3G] = "Conexão 3G";
+            tipo[connection.CELL_4G] = "Conexão 4G";
             tipo[connection.NONE] = "NENHUMA CONEXÃO :/";
 
             $("#exibeRede").html(tipo[rede]);
         }
 
         function bateria(){
+            navigator.vibrate([300]);
             $("#exibeHardware").hide();
             $("#exibeRede").hide();
             $("#exibeBateria").show();
