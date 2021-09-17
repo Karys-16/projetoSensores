@@ -87,9 +87,9 @@
         
             if (window.DeviceOrientationEvent){
                 window.addEventListener('deviceorientation', function(event){
-                    var x = math.round(event.gamma);
-                    var y = math.round(event.beta);
-                    var r = math.round(event.alpha);
+                    var x = Math.round(event.gamma);
+                    var y = Math.round(event.beta);
+                    var r = Math.round(event.alpha);
 
                     var saida = "Eixo X: " + x; 
                     saida += "<br> Eixo Y: " + y;
@@ -109,7 +109,7 @@
                 },true);
             }
             else{
-                alert("Recurso não disponível no seu dispositivo! :/")
+                alert("Recurso não disponível no seu dispositivo! :/");
             }
         }
 
